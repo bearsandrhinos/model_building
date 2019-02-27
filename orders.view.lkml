@@ -158,6 +158,43 @@ view: orders {
     sql: ${TABLE}.status ;;
   }
 
+  dimension: dummy_eight {
+    case: {
+      when: {
+        label: "Average Sale Price"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Count"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Total Profit"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Total Revenue"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Average Cost"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Cancel Percent"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Female Percent"
+        sql: 1=1 ;;
+      }
+      when: {
+        label: "Average Retail Price"
+        sql: 1=1 ;;
+      }
+    }
+    }
+
   dimension: user_id {
     type: number
     # hidden: yes

@@ -33,6 +33,7 @@ persist_with: peter_whitehead_model_building_default_datagroup
 # }
 
 explore: order_items {
+  description: "This is the coolest fucking description ever"
 #   hidden: yes
 # sql_always_where: ${orders.created_date} <= {% date_start order_items.this_better_work %} ;;
 
